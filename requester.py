@@ -7,10 +7,10 @@ endpoint = input("Enter your endpoint: ")
 datas = {}
 dataLenMax = False
 
-while not datalenmax:
+while not dataLenMax:
 	datas[input("Enter datas 'key': ")] = input("enter datas 'value': ")
 	if str(input("are you have another datas? (N/Y): ")).lower() == "n":
-		datalenmax = True
+		dataLenMax = True
 
 
 response = requests.post(endpoint, data=datas)
